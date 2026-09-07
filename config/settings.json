@@ -1,0 +1,21 @@
+{
+  "paths": {
+    "dataset_root": "data/course_dataset",
+    "cache_dir": "data/cache",
+    "model_dir": "data/models",
+    "export_dir": "data/exports"
+  },
+  "database": {
+    "url": "sqlite:///data/artinsight.sqlite3"
+  },
+  "logging": {
+    "log_dir": "logs",
+    "level": "INFO",
+    "file_name": "artinsight.log"
+  },
+  "ui": {
+    "font_family": "Microsoft YaHei UI",
+    "font_size": 11,
+    "theme_path": "resources/styles/app.qss"
+  }
+}

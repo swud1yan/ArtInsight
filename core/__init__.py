@@ -1,0 +1,1 @@
+"""Core algorithm and image processing package for ArtInsight."""

@@ -1,0 +1,13 @@
+﻿metric,method_a,method_b,paired_count,mean_difference,ttest_pvalue,wilcoxon_pvalue
+accuracy,PCA + KNN,Raw Feature + KNN,1,,,
+accuracy,PCA + KNN,LDA + KNN,1,,,
+accuracy,PCA + KNN,Kernel PCA + KNN,1,,,
+accuracy,PCA + KNN,CLIP Embedding + KNN,0,,,
+map_score,PCA + KNN,Raw Feature + KNN,1,,,
+map_score,PCA + KNN,LDA + KNN,1,,,
+map_score,PCA + KNN,Kernel PCA + KNN,1,,,
+map_score,PCA + KNN,CLIP Embedding + KNN,0,,,
+ndcg,PCA + KNN,Raw Feature + KNN,1,,,
+ndcg,PCA + KNN,LDA + KNN,1,,,
+ndcg,PCA + KNN,Kernel PCA + KNN,1,,,
+ndcg,PCA + KNN,CLIP Embedding + KNN,0,,,

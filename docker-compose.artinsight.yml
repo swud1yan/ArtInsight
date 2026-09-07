@@ -1,0 +1,18 @@
+services:
+  artinsight:
+    build:
+      context: .
+      dockerfile: deploy/novnc/Dockerfile
+    container_name: artinsight-novnc
+    restart: unless-stopped
+    environment:
+      ARTINSIGHT_CONFIG: /opt/artinsight/config/settings.aliyun.json
+      ARTINSIGHT_SHOW_MAXIMIZED: ${ARTINSIGHT_SHOW_MAXIMIZED:-1}
+      DISPLAY_WIDTH: ${ARTINSIGHT_DISPLAY_WIDTH:-1440}
+      DISPLAY_HEIGHT: ${ARTINSIGHT_DISPLAY_HEIGHT:-900}
+      VNC_PASSWORD: ${ARTINSIGHT_VNC_PASSWORD:-}
+    ports:
+      - "127.0.0.1:${ARTINSIGHT_NOVNC_PORT:-6080}:6080"
+    volumes:
+      - ./data:/opt/artinsight/data
+      - ./logs:/opt/artinsight/logs

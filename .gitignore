@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.tmp/
+.test_tmp/
+test_tmp_probe/
+.deploy_tools/
+.deploy_ssh/
+.deploy_artinsight_code.tgz
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Application runtime data
+logs/*.log
+!logs/.gitkeep
+data/*.sqlite3
+data/*.db
+data/dataset_overview.csv
+data/dataset_overview_seed_*.csv
+data/expanded_style_coverage*.csv
+data/cache/**
+data/course_dataset/**
+data/course_dataset_seed_*/**
+data/demo_1000_dataset/**
+data/expanded_50_style_dataset*/**
+data/paper_dataset/**
+data/paper_dataset_seed_*/**
+data/raw/**
+data/datasets/**
+data/models/**
+data/exports/**
+!data/cache/.gitkeep
+!data/datasets/.gitkeep
+!data/models/.gitkeep
+!data/exports/.gitkeep
+
+# Local temporary working files
+tmp/**
+
+# Long-running experiment logs
+logs/overnight_*.log
+
+# Large downloaded artifacts
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+
+# Local configuration overrides
+config/local*.json
+config/local*.yaml
+config/local*.yml
